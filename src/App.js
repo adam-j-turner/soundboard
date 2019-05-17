@@ -16,49 +16,70 @@ class Container extends React.Component {
     this.state = {
       progress: 0,
       editMode: false
-      //isDraggable: false,
-      //isResizable: false,
     }
 
-    this.interval = null;
+    this.currentAudio = null
+    this.playing = false
+    this.interval = null
+
     this.changeEditMode = this.changeEditMode.bind(this)
     this.playSound = this.playSound.bind(this)
   }
 
-  changeEditMode(value, event) {
+  changeEditMode(value) {
     this.setState({ editMode: value });
   }
 
   updateProgress() {
     if (this.state.progress <= 100) {
-      var current = this.state.progress
-      this.setState({progress: current + 1})
+      this.setState({progress: this.state.progress + 1})
     }
     else {
-      clearInterval(this.interval)
-      this.setState({progress: 0})
+      this.stopProgress()
     }
+  }
+
+  stopProgress() {
+    clearInterval(this.interval)
+    this.setState({progress: 0})
+  }
+
+  startAudio(){
+    this.playing = true
+    this.currentAudio.play()
+  }
+
+  stopAudio() {
+    this.playing = false
+    this.currentAudio.pause()
+    this.currentAudio.currentTime = 0
+    this.stopProgress()
   }
 
   playSound() {
     // don't play sounds during edit mode
     if (this.state.editMode) {return}
 
-    console.log('play a sound');
-    var audio = new Audio(call_1);
+    if (this.playing) {
+      this.stopAudio()
+    }
 
-    audio.addEventListener('loadedmetadata', () => {
+    console.log('play a sound');
+    this.currentAudio = new Audio(call_1);
+
+    this.currentAudio.addEventListener('loadedmetadata', () => {
       var _this = this;
       this.interval = setInterval(
-        function() {_this.updateProgress()}, audio.duration * 1000 / 100
+        function() {_this.updateProgress()},
+        this.currentAudio.duration * 1000 / 100
       )
-  
-      audio.play();
     })
+
+    this.startAudio()
   }
 
   render() {
-    var layout = [
+    const layout = [
       {i: 'a', x: 0, y: 0, w: 3, h: 1, minW: 2, maxW: 4}
     ];
 
@@ -68,7 +89,7 @@ class Container extends React.Component {
           <Line className='progressBar' percent={this.state.progress} />
           <div className='editModeBar'>
             <h1>Edit Mode: </h1>
-            <ToggleButtonGroup name="editMode" type="radio" onChange={this.changeEditMode}>
+            <ToggleButtonGroup name="editMode" type="radio" onChange={this.changeEditMode} defaultValue={false}>
               <ToggleButton type="radio" value={true}>ON</ToggleButton>
               <ToggleButton type="radio" defaultChecked value={false} >OFF</ToggleButton>
             </ToggleButtonGroup>
