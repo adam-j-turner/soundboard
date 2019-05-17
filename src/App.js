@@ -71,7 +71,7 @@ class Container extends React.Component {
       var _this = this;
       this.interval = setInterval(
         function() {_this.updateProgress()},
-        this.currentAudio.duration * 1000 / 100
+        this.currentAudio.duration * 10
       )
     })
 
