@@ -23,6 +23,39 @@
   color: #61dafb;
 }
 
+.progressBar {
+  width: 100%;
+}
+
+.editModeBar {
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+}
+
+.editModeBar h1 {
+  vertical-align: center;
+  width: 200px;
+  height: 50%;
+  float: left;
+  margin-left: 1%;
+  font-size: 32px;
+}
+
+.editModeBar .btn-group {
+  vertical-align: center;
+  padding: 0;
+  height: 80%;
+}
+
+.buttonGrid {
+}
+
+/* .progress-bar {
+  width: 100%;
+  height: 10%;
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
