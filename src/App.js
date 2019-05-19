@@ -1,8 +1,8 @@
 import React from 'react';
 import RGL, { WidthProvider } from 'react-grid-layout';
+import sounds from './sounds.js'
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import call_1 from './sounds/call_1.wav';
 import { Line } from 'rc-progress';
 import './App.css';
 import '../node_modules/react-grid-layout/css/styles.css'
@@ -15,11 +15,10 @@ class Container extends React.Component {
     super(props)
     this.state = {
       progress: 0,
-      editMode: false
+      editMode: false,
+      playing: false
     }
-
     this.currentAudio = null
-    this.playing = false
     this.interval = null
 
     this.changeEditMode = this.changeEditMode.bind(this)
@@ -45,27 +44,26 @@ class Container extends React.Component {
   }
 
   startAudio(){
-    this.playing = true
+    this.setState({playing: true});
     this.currentAudio.play()
   }
 
   stopAudio() {
-    this.playing = false
+    this.setState({playing: false});
     this.currentAudio.pause()
     this.currentAudio.currentTime = 0
     this.stopProgress()
   }
 
-  playSound() {
+  playSound(sound) {
     // don't play sounds during edit mode
     if (this.state.editMode) {return}
 
-    if (this.playing) {
+    if (this.state.playing) {
       this.stopAudio()
     }
 
-    console.log('play a sound');
-    this.currentAudio = new Audio(call_1);
+    this.currentAudio = new Audio(sound.file);
 
     this.currentAudio.addEventListener('loadedmetadata', () => {
       var _this = this;
@@ -79,10 +77,15 @@ class Container extends React.Component {
   }
 
   render() {
-    const layout = [
-      {i: 'a', x: 0, y: 0, w: 3, h: 1, minW: 2, maxW: 4}
-    ];
+    // Set the default layout for every sound button.
+    const layout = [];
+    sounds.map(
+      (sound, i) => layout.push(
+        {i: sound.key, x: 0, y: 0, w: 3, h: 1, minW: 2, maxW: 4}
+      )
+    )
 
+    // Main soundboard page
     return (
       <div>
         <div className='header'>
@@ -96,9 +99,11 @@ class Container extends React.Component {
           </div>
         </div>
         <GridLayout className="buttonGrid" layout={layout} cols={20} rowHeight={30} isDraggable={this.state.editMode} isResizable={this.state.editMode}>
-          <button key='a' onClick={this.playSound}>
-            Sound 1
-          </button>
+          {sounds.map((sound, i) =>
+            <button key={sound.key} onClick={() => this.playSound(sound)}>
+              {sound.name}
+            </button>)
+          }
         </GridLayout>
       </div>
     )
