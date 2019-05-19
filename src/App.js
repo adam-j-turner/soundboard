@@ -81,7 +81,7 @@ class Container extends React.Component {
     const layout = [];
     sounds.map(
       (sound, i) => layout.push(
-        {i: sound.key, x: 0, y: 0, w: 3, h: 1, minW: 2, maxW: 4}
+        {i: sound.key, x: 0, y: 0, w: 4, h: 1, minW: 2, maxW: 4}
       )
     )
 
