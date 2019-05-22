@@ -60,7 +60,7 @@ class Container extends React.Component {
     return _.map(def, function(item, i) {
       return {
         x: item.x,
-        y: item.x,
+        y: item.y,
         w: item.w,
         h: item.h,
         i: i.toString(),
