@@ -1,0 +1,1098 @@
+[
+  {
+    "text": "Twenty Five Years",
+    "audioPath": "25_years.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "AF1 Hello 1",
+    "audioPath": "af1_hello_1.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "AF1 Hello 2",
+    "audioPath": "af1_hello_2.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "AF1 Yeah 1",
+    "audioPath": "af1_yeah_1.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Alright",
+    "audioPath": "alright.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Anybody There",
+    "audioPath": "anybody_there.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Anybody There 1",
+    "audioPath": "anyone_there_1.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Anybody There 2",
+    "audioPath": "anyone_there_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Are you an idiot?",
+    "audioPath": "are_you_an_idiot.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Are you still there?",
+    "audioPath": "are_you_still_there.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Atrocity and terror...",
+    "audioPath": "atrocity_and_terror.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Between you and me",
+    "audioPath": "between_you_and_me.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Call 1",
+    "audioPath": "call_1.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Call 2",
+    "audioPath": "call_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Call 3",
+    "audioPath": "call_3.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Can you talk?",
+    "audioPath": "cannot_release.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Cannot release",
+    "audioPath": "cant_give_in.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Can't give in",
+    "audioPath": "can_you_talk.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Catherine",
+    "audioPath": "catherine.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Christ 1",
+    "audioPath": "christ_1.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Christ, hurry up!",
+    "audioPath": "christ_hurry_up.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Chuck",
+    "audioPath": "chuck.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Clamp 1",
+    "audioPath": "clamp_1.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Clive Driscoll",
+    "audioPath": "clive_driscoll.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Colors 1",
+    "audioPath": "colors.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Colors 2",
+    "audioPath": "colors_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Devlin MacGregor",
+    "audioPath": "devlin_macgregor.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Did you hear my speech?",
+    "audioPath": "did_you_hear_my_speech.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Don't ask me for something I can't give",
+    "audioPath": "dont_ask_me_for_something_i_cant_give.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Drop it, it's policy",
+    "audioPath": "drop_it_its_policy.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Drop it or find yourself a ride",
+    "audioPath": "drop_it_or_find_yourself_a_ride.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Dump some fuel",
+    "audioPath": "dump_some_fuel.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Football baseball",
+    "audioPath": "football_baseball.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Found a big piece",
+    "audioPath": "found_a_big_piece.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Get him off my tail",
+    "audioPath": "get_him_off_my_tail.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Get off my plane",
+    "audioPath": "get_off_my_plane.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Give a mouse a cookie",
+    "audioPath": "give_a_mouse_a_cookie.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Give me a few moments",
+    "audioPath": "give_me_a_few_moments.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Give me a minute alone",
+    "audioPath": "give_me_a_minute_alone.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Got a job to do",
+    "audioPath": "got_a_job_to_do.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Got it",
+    "audioPath": "got_it.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hang on 1",
+    "audioPath": "hang_on_1.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hang on 2",
+    "audioPath": "hang_on_2.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "He falisified his research",
+    "audioPath": "helen_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I found him",
+    "audioPath": "hello_1.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hello 1",
+    "audioPath": "hello_2.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hello 2",
+    "audioPath": "hello_3.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hello 3",
+    "audioPath": "help_me_fly_this_thing.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Help me fly this thing",
+    "audioPath": "hey_doctor.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Hey doctor",
+    "audioPath": "he_falsified_his_research.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Honey, I'm home",
+    "audioPath": "honey_im_home_1.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "How dare you?",
+    "audioPath": "how_dare_you_1.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "How do I do that?",
+    "audioPath": "how_do_i_do_that.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "How do I get it off autopilot?",
+    "audioPath": "how_do_i_get_it_off_autopilot.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Huh?",
+    "audioPath": "huh_1.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I can prove it",
+    "audioPath": "idk_what_you_mean.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I can't to that",
+    "audioPath": "ill_do_it_1.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I don't care",
+    "audioPath": "ill_do_it_2.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I know all about it",
+    "audioPath": "im_a_janitor.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I need help",
+    "audioPath": "im_sorry_made_a_mistake.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I need help (money)",
+    "audioPath": "im_terribly_sorry.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I need money",
+    "audioPath": "im_the_president.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I see 'em",
+    "audioPath": "its_a_hobby_of_mine.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I think so",
+    "audioPath": "its_diferent_on_the_news.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I wish I could",
+    "audioPath": "its_your_turn_2b_afraid.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "IDK what you mean",
+    "audioPath": "i_cant_do_that.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'll do it 1",
+    "audioPath": "i_can_prove_it.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'll do it 2",
+    "audioPath": "i_dont_care.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'm a janitor",
+    "audioPath": "i_know_all_about_it.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'm sorry, made a mistake",
+    "audioPath": "i_need_helpmoney_1.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'm terribly sorry",
+    "audioPath": "i_need_help_1.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "I'm the president",
+    "audioPath": "i_need_money_1.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "It's a hobby of mine",
+    "audioPath": "i_see_em.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "It's different on the news",
+    "audioPath": "i_think_so.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "It's your turn to be afriad",
+    "audioPath": "i_wish_i_could.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Let's not waste any more time",
+    "audioPath": "lets_not_Waste_any_more_time.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Listen to me 1",
+    "audioPath": "listen_to_me_1.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Listen to me 2",
+    "audioPath": "listen_to_me_2.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Matthew Zelick",
+    "audioPath": "matthew_zelick.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Maybe I'm not ready",
+    "audioPath": "maybe_im_not_ready.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Mechanical arm 1",
+    "audioPath": "mechanical_arm_1.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Mechanical arm 2",
+    "audioPath": "mechanical_arm_2.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Never again",
+    "audioPath": "nevermind.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Never negotiate",
+    "audioPath": "never_again.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Nevermind",
+    "audioPath": "never_negotiate.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "No",
+    "audioPath": "not_hundred_percent_secure.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "No longer afraid",
+    "audioPath": "no_1.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Not hundred percent secure",
+    "audioPath": "no_longer_afraid.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Okay, thanks",
+    "audioPath": "ok_thanks.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Only if they get caught",
+    "audioPath": "only_if_they_get_caught.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Postmaster General",
+    "audioPath": "postmaster_general.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Provasic",
+    "audioPath": "provasic.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Real peace",
+    "audioPath": "real_peace.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Red light",
+    "audioPath": "red_light.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Remember what I told you in the tunnel",
+    "audioPath": "remember_what_i_told_you_in_the_tunnel.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Remember what you told me",
+    "audioPath": "remember_what_you_told_me.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Richard 1",
+    "audioPath": "richard_1.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Richard 2",
+    "audioPath": "richard_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Say again",
+    "audioPath": "say_again.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Shit",
+    "audioPath": "shit.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Solve a puzzle",
+    "audioPath": "solve_a_puzzle.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "St. Louis",
+    "audioPath": "st_louis_1.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Take me off speakerphone",
+    "audioPath": "take_me_off_speakerphone.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Thanks for your help",
+    "audioPath": "thanks_for_your_help.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "That's all",
+    "audioPath": "thats_all.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "That's what I keep tellin them",
+    "audioPath": "thats_what_i_keep_tellin_them.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "That's what we call progress",
+    "audioPath": "thats_what_we_call_progress.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "This is Marshall",
+    "audioPath": "this_is_marshall.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Tonight I come to you",
+    "audioPath": "tonight_i_come_to_you.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Trace the call 1",
+    "audioPath": "trace_the_call.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Trace the call 2",
+    "audioPath": "trace_the_call_2.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Two Niner Zero",
+    "audioPath": "two_niner_zero.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Uh",
+    "audioPath": "uh_1.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Way of the world",
+    "audioPath": "way_of_the_world.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "We don't wanna get the wrong wire",
+    "audioPath": "we_dont_wanna_get_the_wrong_wire.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "We got some lights",
+    "audioPath": "we_gome_some_lights.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "We got five",
+    "audioPath": "we_gotta_get_this_plane_on_the_ground.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "We gotta get this plane on the ground",
+    "audioPath": "we_got_five.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What are our tactical optinos?",
+    "audioPath": "whats_your_name.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What do they want?",
+    "audioPath": "what_are_our_tactical_options.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What do you mean?",
+    "audioPath": "what_do_they_want.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What do you want?",
+    "audioPath": "what_do_you_mean_1.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What? How?",
+    "audioPath": "what_do_you_want.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What is it?",
+    "audioPath": "what_how.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "What's your name?",
+    "audioPath": "what_is_it.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Wife 1",
+    "audioPath": "wife_1.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Wife 2",
+    "audioPath": "wife_2.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Wife 3",
+    "audioPath": "wife_3.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Wife 4",
+    "audioPath": "wife_4.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "With the what?",
+    "audioPath": "with_the_what.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "Yeah",
+    "audioPath": "yeah_1.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You changed the samples",
+    "audioPath": "you_changed_the_samples.wav",
+    "x": 25,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You find that man 1",
+    "audioPath": "you_find_that_man_1.wav",
+    "x": 0,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You find that man 2",
+    "audioPath": "you_find_that_man_2.wav",
+    "x": 5,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You just hang on",
+    "audioPath": "you_just_hang_on.wav",
+    "x": 10,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You switched the samples 1",
+    "audioPath": "you_switched_the_samples.wav",
+    "x": 15,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  },
+  {
+    "text": "You switched the samples 2",
+    "audioPath": "you_switched_the_samples_2.wav",
+    "x": 20,
+    "y": 1,
+    "w": 5,
+    "h": 1
+  }
+]

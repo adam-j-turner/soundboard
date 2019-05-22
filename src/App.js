@@ -1,9 +1,11 @@
 import React from 'react';
+import DemoLayout from './DemoLayout.json'
 import RGL, { WidthProvider } from 'react-grid-layout';
-import sounds from './sounds.js'
+import SoundButton from './SoundButton.js';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 import { Line } from 'rc-progress';
+import _ from "lodash";
 import './App.css';
 import '../node_modules/react-grid-layout/css/styles.css'
 import '../node_modules/react-resizable/css/styles.css'
@@ -11,21 +13,77 @@ import '../node_modules/react-resizable/css/styles.css'
 const GridLayout = WidthProvider(RGL);
 
 class Container extends React.Component {
+  static defaultProps = {
+    defaultLayout: DemoLayout
+  }
+
   constructor(props){
     super(props)
     this.state = {
       progress: 0,
       editMode: false,
-      playing: false
+      playing: false,
+      layoutRaw: this.props.defaultLayout,
+      layout: this.generateLayout(this.props.defaultLayout)
     }
+
+    this.audio = this.importBulk(require.context('./sounds', false, /\.(wav|mp3)$/))
+
     this.currentAudio = null
+    this.playing = false
     this.interval = null
 
-    this.changeEditMode = this.changeEditMode.bind(this)
-    this.playSound = this.playSound.bind(this)
+    this.handleEditModeChange = this.handleEditModeChange.bind(this)
+    this.handleSoundButtonClick = this.handleSoundButtonClick.bind(this)
   }
 
-  changeEditMode(value) {
+  importBulk(r) {
+    let clips = {}
+
+    r.keys().map((item) => { clips[item.replace('./', '')] = new Audio(r(item)) })
+
+    _.forEach(clips, (clip) => {
+      clip.preload = true
+      clip.load()
+
+      clip.addEventListener('ended', () => {
+        this.setState({playing: false}, () => {
+          this.stopProgress()
+        })
+      })
+    })
+
+    return clips;
+  }
+
+  generateLayout(def) {
+    return _.map(def, function(item, i) {
+      return {
+        x: item.x,
+        y: item.x,
+        w: item.w,
+        h: item.h,
+        i: i.toString(),
+      }
+    })
+  }
+
+  generateSoundButtons() {
+    var _this = this
+
+    return _.map(this.state.layoutRaw, function(item, i) {
+      return (
+        <SoundButton 
+          key={i} 
+          text={item.text} 
+          audioPath={item.audioPath} 
+          onClick={() => _this.handleSoundButtonClick(item.audioPath)}>
+        </SoundButton>
+      )
+    })
+  }
+
+  handleEditModeChange(value) {
     this.setState({ editMode: value });
   }
 
@@ -38,53 +96,57 @@ class Container extends React.Component {
     }
   }
 
+  startProgress() {
+    var _this = this
+    this.interval = setInterval(
+      function() {
+        _this.setState({
+          progress: _this.currentAudio.currentTime * 100 / _this.currentAudio.duration 
+        })
+      },
+      40
+    )
+  }
+
   stopProgress() {
     clearInterval(this.interval)
     this.setState({progress: 0})
   }
 
-  startAudio(){
-    this.setState({playing: true});
+  startAudio() {
+    this.startProgress()
     this.currentAudio.play()
   }
 
   stopAudio() {
-    this.setState({playing: false});
+    this.stopProgress()
     this.currentAudio.pause()
     this.currentAudio.currentTime = 0
-    this.stopProgress()
   }
 
-  playSound(sound) {
+  handleSoundButtonClick(path) {
     // don't play sounds during edit mode
     if (this.state.editMode) {return}
 
     if (this.state.playing) {
-      this.stopAudio()
+      this.setState({playing: false}, () => {
+        this.stopAudio()
+
+        this.currentAudio = this.audio[path]
+        this.setState({playing: true}, () => {
+          this.startAudio()
+        })
+      })
     }
-
-    this.currentAudio = new Audio(sound.file);
-
-    this.currentAudio.addEventListener('loadedmetadata', () => {
-      var _this = this;
-      this.interval = setInterval(
-        function() {_this.updateProgress()},
-        this.currentAudio.duration * 10
-      )
-    })
-
-    this.startAudio()
+    else {
+      this.currentAudio = this.audio[path]
+      this.setState({playing: true}, () => {
+        this.startAudio()
+      })
+    }    
   }
 
   render() {
-    // Set the default layout for every sound button.
-    const layout = [];
-    sounds.map(
-      (sound, i) => layout.push(
-        {i: sound.key, x: 0, y: 0, w: 4, h: 1, minW: 2, maxW: 4}
-      )
-    )
-
     // Main soundboard page
     return (
       <div>
@@ -92,18 +154,21 @@ class Container extends React.Component {
           <Line className='progressBar' percent={this.state.progress} />
           <div className='editModeBar'>
             <h1>Edit Mode: </h1>
-            <ToggleButtonGroup name="editMode" type="radio" onChange={this.changeEditMode} defaultValue={false}>
+            <ToggleButtonGroup name="editMode" type="radio" onChange={this.handleEditModeChange} defaultValue={false}>
               <ToggleButton type="radio" value={true}>ON</ToggleButton>
-              <ToggleButton type="radio" defaultChecked value={false} >OFF</ToggleButton>
+              <ToggleButton type="radio" defaultChecked value={false}>OFF</ToggleButton>
             </ToggleButtonGroup>
           </div>
         </div>
-        <GridLayout className="buttonGrid" layout={layout} cols={20} rowHeight={30} isDraggable={this.state.editMode} isResizable={this.state.editMode}>
-          {sounds.map((sound, i) =>
-            <button key={sound.key} onClick={() => this.playSound(sound)}>
-              {sound.name}
-            </button>)
-          }
+        <GridLayout 
+          layout={this.state.layout} 
+          compactType='vertical'
+          className='buttonGrid' 
+          cols={30} rowHeight={30}
+          isDraggable={this.state.editMode} 
+          isResizable={this.state.editMode}
+        >
+          {this.generateSoundButtons()}
         </GridLayout>
       </div>
     )
