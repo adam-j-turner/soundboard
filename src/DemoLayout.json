@@ -121,7 +121,7 @@
   },
   {
     "text": "Can you talk?",
-    "audioPath": "cannot_release.wav",
+    "audioPath": "can_you_talk.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -129,7 +129,7 @@
   },
   {
     "text": "Cannot release",
-    "audioPath": "cant_give_in.wav",
+    "audioPath": "cannot_release.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -137,7 +137,7 @@
   },
   {
     "text": "Can't give in",
-    "audioPath": "can_you_talk.wav",
+    "audioPath": "cant_give_in.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -345,7 +345,7 @@
   },
   {
     "text": "He falisified his research",
-    "audioPath": "helen_2.wav",
+    "audioPath": "he_falsified_his_research.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -353,7 +353,7 @@
   },
   {
     "text": "I found him",
-    "audioPath": "hello_1.wav",
+    "audioPath": "helen_2.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -361,7 +361,7 @@
   },
   {
     "text": "Hello 1",
-    "audioPath": "hello_2.wav",
+    "audioPath": "hello_1.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -369,7 +369,7 @@
   },
   {
     "text": "Hello 2",
-    "audioPath": "hello_3.wav",
+    "audioPath": "hello_2.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -377,7 +377,7 @@
   },
   {
     "text": "Hello 3",
-    "audioPath": "help_me_fly_this_thing.wav",
+    "audioPath": "hello_3.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -385,7 +385,7 @@
   },
   {
     "text": "Help me fly this thing",
-    "audioPath": "hey_doctor.wav",
+    "audioPath": "help_me_fly_this_thing.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -393,7 +393,7 @@
   },
   {
     "text": "Hey doctor",
-    "audioPath": "he_falsified_his_research.wav",
+    "audioPath": "hey_doctor.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -441,15 +441,15 @@
   },
   {
     "text": "I can prove it",
-    "audioPath": "idk_what_you_mean.wav",
+    "audioPath": "i_can_prove_it.wav",
     "x": 5,
     "y": 1,
     "w": 5,
     "h": 1
   },
   {
-    "text": "I can't to that",
-    "audioPath": "ill_do_it_1.wav",
+    "text": "I can't do that",
+    "audioPath": "i_cant_do_that.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -457,7 +457,7 @@
   },
   {
     "text": "I don't care",
-    "audioPath": "ill_do_it_2.wav",
+    "audioPath": "i_dont_care.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -465,7 +465,7 @@
   },
   {
     "text": "I know all about it",
-    "audioPath": "im_a_janitor.wav",
+    "audioPath": "i_know_all_about_it.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -473,7 +473,7 @@
   },
   {
     "text": "I need help",
-    "audioPath": "im_sorry_made_a_mistake.wav",
+    "audioPath": "i_need_help_1.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -481,7 +481,7 @@
   },
   {
     "text": "I need help (money)",
-    "audioPath": "im_terribly_sorry.wav",
+    "audioPath": "i_need_helpmoney_1.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -489,7 +489,7 @@
   },
   {
     "text": "I need money",
-    "audioPath": "im_the_president.wav",
+    "audioPath": "i_need_money_1.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -497,7 +497,7 @@
   },
   {
     "text": "I see 'em",
-    "audioPath": "its_a_hobby_of_mine.wav",
+    "audioPath": "i_see_em.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -505,7 +505,7 @@
   },
   {
     "text": "I think so",
-    "audioPath": "its_diferent_on_the_news.wav",
+    "audioPath": "i_think_so.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -513,7 +513,7 @@
   },
   {
     "text": "I wish I could",
-    "audioPath": "its_your_turn_2b_afraid.wav",
+    "audioPath": "i_wish_i_could.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -521,7 +521,7 @@
   },
   {
     "text": "IDK what you mean",
-    "audioPath": "i_cant_do_that.wav",
+    "audioPath": "idk_what_you_mean.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -529,7 +529,7 @@
   },
   {
     "text": "I'll do it 1",
-    "audioPath": "i_can_prove_it.wav",
+    "audioPath": "ill_do_it_1.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -537,7 +537,7 @@
   },
   {
     "text": "I'll do it 2",
-    "audioPath": "i_dont_care.wav",
+    "audioPath": "ill_do_it_2.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -545,7 +545,7 @@
   },
   {
     "text": "I'm a janitor",
-    "audioPath": "i_know_all_about_it.wav",
+    "audioPath": "im_a_janitor.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -553,7 +553,7 @@
   },
   {
     "text": "I'm sorry, made a mistake",
-    "audioPath": "i_need_helpmoney_1.wav",
+    "audioPath": "im_sorry_made_a_mistake.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -561,7 +561,7 @@
   },
   {
     "text": "I'm terribly sorry",
-    "audioPath": "i_need_help_1.wav",
+    "audioPath": "im_terribly_sorry.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -569,7 +569,7 @@
   },
   {
     "text": "I'm the president",
-    "audioPath": "i_need_money_1.wav",
+    "audioPath": "im_the_president.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -577,7 +577,7 @@
   },
   {
     "text": "It's a hobby of mine",
-    "audioPath": "i_see_em.wav",
+    "audioPath": "its_a_hobby_of_mine.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -585,7 +585,7 @@
   },
   {
     "text": "It's different on the news",
-    "audioPath": "i_think_so.wav",
+    "audioPath": "its_diferent_on_the_news.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -593,7 +593,7 @@
   },
   {
     "text": "It's your turn to be afriad",
-    "audioPath": "i_wish_i_could.wav",
+    "audioPath": "its_your_turn_2b_afraid.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -657,7 +657,7 @@
   },
   {
     "text": "Never again",
-    "audioPath": "nevermind.wav",
+    "audioPath": "never_again.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -665,7 +665,7 @@
   },
   {
     "text": "Never negotiate",
-    "audioPath": "never_again.wav",
+    "audioPath": "never_negotiate.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -673,7 +673,7 @@
   },
   {
     "text": "Nevermind",
-    "audioPath": "never_negotiate.wav",
+    "audioPath": "nevermind.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -681,7 +681,7 @@
   },
   {
     "text": "No",
-    "audioPath": "not_hundred_percent_secure.wav",
+    "audioPath": "no_1.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -689,7 +689,7 @@
   },
   {
     "text": "No longer afraid",
-    "audioPath": "no_1.wav",
+    "audioPath": "no_longer_afraid.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -697,7 +697,7 @@
   },
   {
     "text": "Not hundred percent secure",
-    "audioPath": "no_longer_afraid.wav",
+    "audioPath": "not_hundred_percent_secure.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -929,7 +929,7 @@
   },
   {
     "text": "We got five",
-    "audioPath": "we_gotta_get_this_plane_on_the_ground.wav",
+    "audioPath": "we_got_five.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -937,7 +937,7 @@
   },
   {
     "text": "We gotta get this plane on the ground",
-    "audioPath": "we_got_five.wav",
+    "audioPath": "we_gotta_get_this_plane_on_the_ground.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -945,7 +945,7 @@
   },
   {
     "text": "What are our tactical optinos?",
-    "audioPath": "whats_your_name.wav",
+    "audioPath": "what_are_our_tactical_options.wav",
     "x": 20,
     "y": 1,
     "w": 5,
@@ -953,7 +953,7 @@
   },
   {
     "text": "What do they want?",
-    "audioPath": "what_are_our_tactical_options.wav",
+    "audioPath": "what_do_they_want.wav",
     "x": 25,
     "y": 1,
     "w": 5,
@@ -961,7 +961,7 @@
   },
   {
     "text": "What do you mean?",
-    "audioPath": "what_do_they_want.wav",
+    "audioPath": "what_do_you_mean_1.wav",
     "x": 0,
     "y": 1,
     "w": 5,
@@ -969,7 +969,7 @@
   },
   {
     "text": "What do you want?",
-    "audioPath": "what_do_you_mean_1.wav",
+    "audioPath": "what_do_you_want.wav",
     "x": 5,
     "y": 1,
     "w": 5,
@@ -977,7 +977,7 @@
   },
   {
     "text": "What? How?",
-    "audioPath": "what_do_you_want.wav",
+    "audioPath": "what_how.wav",
     "x": 10,
     "y": 1,
     "w": 5,
@@ -985,7 +985,7 @@
   },
   {
     "text": "What is it?",
-    "audioPath": "what_how.wav",
+    "audioPath": "what_is_it.wav",
     "x": 15,
     "y": 1,
     "w": 5,
@@ -993,7 +993,7 @@
   },
   {
     "text": "What's your name?",
-    "audioPath": "what_is_it.wav",
+    "audioPath": "whats_your_name.wav",
     "x": 20,
     "y": 1,
     "w": 5,
