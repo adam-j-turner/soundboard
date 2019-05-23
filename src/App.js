@@ -37,10 +37,13 @@ class Container extends React.Component {
     this.handleSoundButtonClick = this.handleSoundButtonClick.bind(this)
   }
 
-  importBulk(r) {
+  // Imports audio in bulk from a webpack context
+  importBulk(context) {
     let clips = {}
 
-    r.keys().map((item) => { clips[item.replace('./', '')] = new Audio(r(item)) })
+    context.keys().map((item) => {
+      clips[item.replace('./', '')] = new Audio(context(item))
+    })
 
     _.forEach(clips, (clip) => {
       clip.preload = true
