@@ -1,13 +1,43 @@
+:root {
+  --background: #efebe9;
+  --primary: #A1887F;
+  --text: #3a1f2b;
+  --hover: #7f98a1;
+}
+
 .App {
+  font-family: "Calibri", Times, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.header {
+  padding-top: 10px;
   text-align: center;
 }
 
+.button {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.button:hover {
+  background-color: var(--hover);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active{
+  background-color: var(--background);
+  color: var(--text);
+}
+
 .progressBar {
+  padding-bottom: 15px;
   width: 100%;
 }
 
 .editModeBar {
-  overflow: hidden;
+  overflow: hidden; 
   position: relative;
   height: 50px;
 }
@@ -19,10 +49,4 @@
   float: left;
   margin-left: 1%;
   font-size: 32px;
-}
-
-.editModeBar .btn-group {
-  vertical-align: center;
-  padding: 0;
-  height: 80%;
 }

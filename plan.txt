@@ -1,7 +1,8 @@
 - Pick a theme (done)
-- Gather all of the required sounds. (In progress)
-- Upload all of the sounds and link them to the corresponding button. (In progress)
-- Create Header/title/description
-- Place and order the buttons in a logical way
+- Gather all of the required sounds. (done)
+- Upload all of the sounds and link them to the corresponding button. (done)
+- Create Header/title/description (done)
+- Place and order the buttons in a logical way (done)
 - Allow users to cancel sounds as they're playing (optional)
-- Styling
+- Styling (done)
+- Write tests

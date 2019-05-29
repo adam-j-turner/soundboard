@@ -152,21 +152,23 @@ class Container extends React.Component {
   render() {
     // Main soundboard page
     return (
-      <div>
+      <div className='App'>
         <div className='header'>
-          <Line className='progressBar' percent={this.state.progress} />
+          <h1>The Ultimate Harrison Ford Soundboard</h1>
+        </div>
+        <div>
+          <Line className='progressBar' strokeColor='var(--primary)' percent={this.state.progress} />
           <div className='editModeBar'>
             <h1>Edit Mode: </h1>
             <ToggleButtonGroup name="editMode" type="radio" onChange={this.handleEditModeChange} defaultValue={false}>
-              <ToggleButton type="radio" value={true}>ON</ToggleButton>
-              <ToggleButton type="radio" defaultChecked value={false}>OFF</ToggleButton>
+              <ToggleButton className="button" type="radio" value={true}>ON</ToggleButton>
+              <ToggleButton className="button" type="radio" defaultChecked value={false}>OFF</ToggleButton>
             </ToggleButtonGroup>
           </div>
         </div>
         <GridLayout
           layout={this.state.layout}
           compactType='vertical'
-          className='buttonGrid'
           cols={30} rowHeight={30}
           isDraggable={this.state.editMode}
           isResizable={this.state.editMode}

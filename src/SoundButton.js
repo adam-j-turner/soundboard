@@ -10,8 +10,8 @@ class SoundButton extends React.Component {
     return (
       <button
         {...this.props}
-        className={`wrapper ${this.props.className}`}
-        key={this.props.key} 
+        className='button'
+        key={this.props.key}
         onClick={this.props.onClick}
       >
         {this.props.text}
