@@ -104,7 +104,7 @@ class Container extends React.Component {
     this.interval = setInterval(
       function() {
         _this.setState({
-          progress: _this.currentAudio.currentTime * 100 / _this.currentAudio.duration 
+          progress: _this.currentAudio.currentTime * 100 / _this.currentAudio.duration
         })
       },
       40
@@ -163,12 +163,12 @@ class Container extends React.Component {
             </ToggleButtonGroup>
           </div>
         </div>
-        <GridLayout 
-          layout={this.state.layout} 
+        <GridLayout
+          layout={this.state.layout}
           compactType='vertical'
-          className='buttonGrid' 
+          className='buttonGrid'
           cols={30} rowHeight={30}
-          isDraggable={this.state.editMode} 
+          isDraggable={this.state.editMode}
           isResizable={this.state.editMode}
         >
           {this.generateSoundButtons()}
