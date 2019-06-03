@@ -50,3 +50,43 @@
   margin-left: 1%;
   font-size: 32px;
 }
+
+.MuiFab-root {
+  height: 18px !important;
+}
+
+.MuiFab-primary {
+  border-radius: 0% !important;
+  width: auto !important;
+  height: 18px !important;
+  text-transform: none !important;
+  text-align: center;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.MuiFab-label {
+  height: 18px !important;
+}
+
+.MuiFab-primary p {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 16px;
+}
+
+.multiButtonOption {
+  transition: none !important;
+  margin: 0px !important;
+  box-shadow: none !important;
+
+  border-radius: 0% !important;
+}
+
+.multiButtonOption p {
+  padding-top: 16px;
+}
+
+.MuiSpeedDial-actions {
+  padding-left: 32px !important;
+}
