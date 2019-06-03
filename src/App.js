@@ -158,7 +158,7 @@ class Container extends React.Component {
   // where the cursor is positioned.
   handleMouseUp() {
     this.multiButtons
-      .filter(node => node != null)
+      .filter(mb => mb != null)
       .forEach((mb) => {
         mb.handleClose()
       })
