@@ -1,6 +1,7 @@
 import React from 'react';
 import DemoLayout from './DemoLayout.json'
 import RGL, { WidthProvider } from 'react-grid-layout';
+import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
@@ -27,6 +28,8 @@ class Container extends React.Component {
       layout: this.generateLayout(this.props.defaultLayout)
     }
 
+    this.multiButtons = []
+
     this.audio = this.importBulk(require.context('./sounds', false, /\.(wav|mp3)$/))
 
     this.currentAudio = null
@@ -35,6 +38,7 @@ class Container extends React.Component {
 
     this.handleEditModeChange = this.handleEditModeChange.bind(this)
     this.handleSoundButtonClick = this.handleSoundButtonClick.bind(this)
+    this.handleMouseUp = this.handleMouseUp.bind(this)
   }
 
   // Imports audio in bulk from a webpack context
@@ -149,10 +153,21 @@ class Container extends React.Component {
     }    
   }
 
+  // Uses callback refs to collapse all MultiButtons on mouseUp.
+  // This allows for the MultiButtons to collapse no matter
+  // where the cursor is positioned.
+  handleMouseUp() {
+    this.multiButtons
+      .filter(mb => mb != null)
+      .forEach((mb) => {
+        mb.handleClose()
+      })
+  }
+
   render() {
     // Main soundboard page
     return (
-      <div className='App'>
+      <div className='App' onMouseUp={this.handleMouseUp}>
         <div className='header'>
           <h1>The Ultimate Harrison Ford Soundboard</h1>
         </div>
@@ -166,6 +181,19 @@ class Container extends React.Component {
             </ToggleButtonGroup>
           </div>
         </div>
+        {/* Example usage of MultiButton */}
+        <MultiButton
+          text='Hello'
+          options = {[
+            {text: '1', description: 'Helloo?', audioPath: 'hello_1.wav', default: true},
+            {text: '2', description: 'Hello?', audioPath: 'hello_2.wav'},
+            {text: '3', description: 'HELLO!', audioPath: 'hello_3.wav'},
+            {text: '4', description: 'HELLO!?', audioPath: 'af1_hello_1.wav'},
+            {text: '5', description: 'Hello... is anyone there?', audioPath: 'af1_hello_2.wav'}
+          ]}
+          onMouseUp={this.handleSoundButtonClick}
+          ref={(mb) => this.multiButtons.push(mb)}
+        />
         <GridLayout
           layout={this.state.layout}
           compactType='vertical'
