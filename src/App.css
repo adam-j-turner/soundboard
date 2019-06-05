@@ -51,6 +51,23 @@
   font-size: 32px;
 }
 
+.MainGrid {
+  padding: 20px;
+}
+
+.ButtonPanel {
+  padding: 15px;
+  padding-top: 20px;
+}
+
+.ButtonPanel-label {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  opacity: 0.75;
+}
+
 .MuiPopover-paper {
   z-index: 9999;
   position: relative;

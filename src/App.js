@@ -2,6 +2,7 @@ import React from 'react';
 import DemoLayout from './DemoLayout.json'
 import Grid from '@material-ui/core/Grid'
 import RGL, { WidthProvider } from 'react-grid-layout';
+import ButtonPanel from './ButtonPanel.js';
 import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
 import ToggleButton from 'react-bootstrap/ToggleButton';
@@ -183,25 +184,40 @@ class Container extends React.Component {
           </div>
         </div>
 
+        {/* Main grid */}
         <Grid
           container
+          className="MainGrid"
           direction="row"
           justify="flex-start"
           alignItems="flex-start"
           spacing={2}
         >
-          <MultiButton
-            text='Hello'
-            options = {[
-              {text: '1', description: 'Helloo?', audioPath: 'hello_1.wav', default: true},
-              {text: '2', description: 'Hello?', audioPath: 'hello_2.wav'},
-              {text: '3', description: 'HELLO!', audioPath: 'hello_3.wav'},
-              {text: '4', description: 'HELLO!?', audioPath: 'af1_hello_1.wav'},
-              {text: '5', description: 'Hello... is anyone there?', audioPath: 'af1_hello_2.wav'}
-            ]}
-            onMouseUp={this.handleSoundButtonClick}
-            ref={(mb) => this.multiButtons.push(mb)}
-          />
+          {/* Greetings Panel */}
+          <ButtonPanel title='Greetings'>
+            <MultiButton
+              text='Hello'
+              options = {[
+                {text: '1', description: 'Helloo?', audioPath: 'hello_1.wav', default: true},
+                {text: '2', description: 'Hello?', audioPath: 'hello_2.wav'},
+                {text: '3', description: 'HELLO!', audioPath: 'hello_3.wav'},
+                {text: '4', description: 'HELLO!?', audioPath: 'af1_hello_1.wav'},
+                {text: '5', description: 'Hello... is anyone there?', audioPath: 'af1_hello_2.wav'}
+              ]}
+              onMouseUp={this.handleSoundButtonClick}
+              ref={(mb) => this.multiButtons.push(mb)}
+            />
+            <MultiButton
+              text='Anyone there?'
+              options = {[
+                {text: '1', description: 'Anybody there?', audioPath: 'anybody_there.wav', default: true},
+                {text: '2', description: 'Anyone there? (1)', audioPath: 'anyone_there_1.wav'},
+                {text: '3', description: 'Anyone there? (2)', audioPath: 'anyone_there_2.wav'}
+              ]}
+              onMouseUp={this.handleSoundButtonClick}
+              ref={(mb) => this.multiButtons.push(mb)}
+            />
+          </ButtonPanel>
           <MultiButton
             text='No'
             options = {[
