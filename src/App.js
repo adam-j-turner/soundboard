@@ -32,7 +32,7 @@ class Container extends React.Component {
 
     this.multiButtons = []
 
-    this.audio = this.importBulk(require.context('./sounds', false, /\.(wav|mp3)$/))
+    this.audio = this.importBulk(require.context('./sounds', true, /\.(wav|mp3)$/))
 
     this.currentAudio = null
     this.playing = false
@@ -198,11 +198,11 @@ class Container extends React.Component {
             <MultiButton
               text='Hello'
               options = {[
-                {text: '1', description: 'Helloo?', audioPath: 'hello_1.wav', default: true},
-                {text: '2', description: 'Hello?', audioPath: 'hello_2.wav'},
-                {text: '3', description: 'HELLO!', audioPath: 'hello_3.wav'},
-                {text: '4', description: 'HELLO!?', audioPath: 'af1_hello_1.wav'},
-                {text: '5', description: 'Hello... is anyone there?', audioPath: 'af1_hello_2.wav'}
+                {text: '1', description: 'Helloo?', audioPath: 'greetings/hello_1.wav', default: true},
+                {text: '2', description: 'Hello?', audioPath: 'greetings/hello_2.wav'},
+                {text: '3', description: 'HELLO!', audioPath: 'greetings/hello_3.wav'},
+                {text: '4', description: 'HELLO!?', audioPath: 'greetings/af1_hello_1.wav'},
+                {text: '5', description: 'Hello... is anyone there?', audioPath: 'greetings/af1_hello_2.wav'}
               ]}
               onMouseUp={this.handleSoundButtonClick}
               ref={(mb) => this.multiButtons.push(mb)}
@@ -210,9 +210,10 @@ class Container extends React.Component {
             <MultiButton
               text='Anyone there?'
               options = {[
-                {text: '1', description: 'Anybody there?', audioPath: 'anybody_there.wav', default: true},
-                {text: '2', description: 'Anyone there? (1)', audioPath: 'anyone_there_1.wav'},
-                {text: '3', description: 'Anyone there? (2)', audioPath: 'anyone_there_2.wav'}
+                {text: '1', description: 'Anybody there?', audioPath: 'greetings/anybody_there.wav', default: true},
+                {text: '2', description: 'Anyone there? (1)', audioPath: 'greetings/anyone_there_1.wav'},
+                {text: '3', description: 'Anyone there? (2)', audioPath: 'greetings/anyone_there_2.wav'},
+                {text: '4', description: 'Still there?', audioPath: 'greetings/are_you_still_there.wav'}
               ]}
               onMouseUp={this.handleSoundButtonClick}
               ref={(mb) => this.multiButtons.push(mb)}
