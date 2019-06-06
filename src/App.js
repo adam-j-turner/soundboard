@@ -4,8 +4,6 @@ import PanelColumn from './PanelColumn.js';
 import ButtonPanel from './ButtonPanel.js';
 import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 import { Line } from 'rc-progress';
 import _ from "lodash";
 import './App.css';
