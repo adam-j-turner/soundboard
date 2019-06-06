@@ -1,10 +1,10 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import Tooltip from '@material-ui/core/Tooltip';
-import ListItemText from "@material-ui/core/ListItemText";
+import ListItemText from '@material-ui/core/ListItemText';
 
 class MultiButton extends React.Component {
   constructor(props){
@@ -29,7 +29,8 @@ class MultiButton extends React.Component {
     return (
       <Grid item key={this.props.key}>
         <Button
-          className="MultiButton-main"
+          {...this.props}
+          className="Button-base MultiButton-main"
           aria-controls="customized-menu"
           aria-haspopup="true"
           variant="contained"
@@ -57,13 +58,16 @@ class MultiButton extends React.Component {
           autoFocus={false}
           transitionDuration={0}
           variant="menu"
+          hideBackdrop={true}
+          disablePortal
+          // TODO: Support multiple origins/transforms
           anchorOrigin={{
             vertical: "bottom",
-            horizontal: "right"
+            horizontal: "left"
           }}
           transformOrigin={{
             vertical: "top",
-            horizontal: "right"
+            horizontal: "left"
           }}
         >
           {this.props.options.map(option => (
