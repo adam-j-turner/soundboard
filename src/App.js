@@ -343,9 +343,9 @@ class Container extends React.Component {
 
           {/* Column 3 */}
           <PanelColumn direction='row' maxWidth='660px' justify='flex-start'>
-            <ButtonPanel title='Greetings' justify='flex-start' maxWidth='290px'>
+            <ButtonPanel title='Greetings' justify='flex-start' maxWidth='320px'>
               <MultiButton
-                text='Hello'
+                text='Hello' size='Large'
                 options = {[
                   {text: '1', description: 'Helloo?', audioPath: 'greetings/hello_1.wav', default: true},
                   {text: '2', description: 'Hello?', audioPath: 'greetings/hello_2.wav'},
@@ -373,9 +373,9 @@ class Container extends React.Component {
                 onClick={this.handleSoundButtonClick}
               />
             </ButtonPanel>
-            <ButtonPanel title='Agree / Disagree' maxWidth='210px'>
+            <ButtonPanel title='Agree / Disagree' maxWidth='220px'>
               <MultiButton
-                text='Yes'
+                text='Yes' size='Large'
                 options = {[
                   {text: 'Yeah 1', description: 'Yeah (1)', audioPath: 'agree/yeah_1.wav', default: true},
                   {text: 'Yeah 2', description: 'Yeah (2)', audioPath: 'agree/yeah_2.wav', }
@@ -394,7 +394,7 @@ class Container extends React.Component {
                 ref={(mb) => this.multiButtons.push(mb)}
               />
               <MultiButton
-                text='No'
+                text='No' size='Large'
                 options = {[
                   {text: '1', description: 'No', audioPath: 'disagree/no_1.wav', default: true},
                   {text: '2', description: 'No', audioPath: 'disagree/no_2.wav'},

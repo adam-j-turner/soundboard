@@ -31,6 +31,10 @@ class MultiButton extends React.Component {
         <Button
           {...this.props}
           className="Button-base MultiButton-main"
+          classes={{
+            sizeSmall: 'Button-base-small',
+            sizeLarge: 'Button-base-large'  
+          }}
           aria-controls="customized-menu"
           aria-haspopup="true"
           variant="contained"

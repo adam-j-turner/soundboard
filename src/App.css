@@ -71,6 +71,21 @@ div[role=presentation] {
 .Button-base {
   position: relative;
   background: #214fa5;
+  text-align: center;
+
+  height: 26px;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.Button-base-small {
+  height: 18px;
+  font-size: 11px !important;
+}
+
+.Button-base-large {
+  height: 30px;
+  font-size: 18px !important;
 }
 
 .MultiButton-main {
