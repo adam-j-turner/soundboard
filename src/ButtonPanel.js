@@ -12,7 +12,7 @@ class ButtonPanel extends React.Component {
   render() {
     return (
       // The panel is a grid inside the larger main grid.
-      <Grid item key={this.props.key}>
+      <Grid item key={this.props.key} style={{maxWidth: this.props.maxWidth}}>
         <Paper>
           <span className='ButtonPanel-label'>
             {this.props.title}
@@ -38,7 +38,8 @@ ButtonPanel.defaultProps = {
   direction: "row",
   justify: "center",
   alignItems: "center",
-  spacing: 2
+  spacing: 2,
+  maxWidth: '400px'
 }
 
 export default ButtonPanel
