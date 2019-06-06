@@ -140,6 +140,40 @@ class Container extends React.Component {
         >
           {/* Column 1 */}
           <PanelColumn>
+            <ButtonPanel title='Locations' direction='column' alignItems='flex-start'>
+              <SoundButton 
+                text='St. Louis' size='small'
+                description='St. Louis'
+                audioPath='locations/st_louis_1.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='389 Park Ave' size='small'
+                description='389 Park Avenue'
+                audioPath='locations/389_park_avenue.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+            <ButtonPanel title='Money' direction='column' alignItems='flex-start'>
+              <SoundButton 
+                text="What'd that cost?" size='small'
+                description="What'd that cost me?"
+                audioPath='money/whatd_that_cost_me.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+            <ButtonPanel title='Colors' direction='column' alignItems='flex-start'>
+              <SoundButton 
+                text="GYRW&B" size='small'
+                description="Green, Yellow, Red White & Blue"
+                audioPath='colors/colors.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+          </PanelColumn>
+
+          {/* Column 2 */}
+          <PanelColumn>
             <ButtonPanel
               title='Names' direction='row' spacing={1}
               alignItems='flex-start' maxWidth='200px'
@@ -301,7 +335,8 @@ class Container extends React.Component {
               />
             </ButtonPanel>
           </PanelColumn>
-          {/* Column 2 */}
+
+          {/* Column 3 */}
           <PanelColumn>
             <ButtonPanel title='Call related' direction='column' alignItems='flex-start'>
               <SoundButton 
@@ -337,10 +372,57 @@ class Container extends React.Component {
                 ref={(mb) => this.multiButtons.push(mb)}
               />
             </ButtonPanel>
+            <ButtonPanel title="'You'" direction='column' alignItems='flex-start'>
+              <SoundButton 
+                  text='U told me so' size='small'
+                  description='You told me so yourself.'
+                  audioPath='you/you_told_me_so_yourself.wav'
+                  onClick={this.handleSoundButtonClick}
+                />
+              <SoundButton 
+                text="'member what u told me?" size='small'
+                description='Remember what you told me?'
+                audioPath='you/remember_what_you_told_me.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <MultiButton
+                text='You said'
+                options = {[
+                  {text: '1', description: 'You said', audioPath: 'you/you_said_1.wav', default: true},
+                  {text: '2', description: 'You said', audioPath: 'you/you_said_2.wav'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <SoundButton 
+                text='U begged me' size='small'
+                description='You begged me'
+                audioPath='you/you_begged_me.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='U should be' size='small'
+                description='You should be'
+                audioPath='you/you_should_be.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='U r upset' size='small'
+                description="You're upset"
+                audioPath='you/youre_upset.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='U r a linguist' size='small'
+                description="You're quite a linguist"
+                audioPath='you/youre_quite_a_linguist.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
           </PanelColumn>
 
-          {/* Column 3 */}
-          <PanelColumn direction='row' maxWidth='660px' justify='flex-start'>
+          {/* Column 4 */}
+          <PanelColumn direction='row' maxWidth='535px' justify='flex-start'>
             <ButtonPanel title='Greetings' justify='flex-start' maxWidth='320px'>
               <MultiButton
                 text='Hello' size='Large'
@@ -548,6 +630,89 @@ class Container extends React.Component {
               <SoundButton 
                 text="Tactical options?" size='small'
                 audioPath='questions/what_are_our_tactical_options.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+          </PanelColumn>
+
+          {/* Column 5 */}
+          <PanelColumn>
+            <ButtonPanel title='Angry' direction='row' justify='flex-start' maxWidth='250px'>
+              <MultiButton
+                text='Curse'
+                options = {[
+                  {text: 'Shit', description: 'Shit...', audioPath: 'angry/shit.wav', default: true},
+                  {text: 'Christ', description: 'Christ', audioPath: 'angry/christ_1.wav'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <SoundButton 
+                text="R U an idiot?" size='small'
+                audioPath='angry/are_you_an_idiot.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="How dare U" size='small'
+                audioPath='angry/how_dare_you_1.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="He's an idiot" size='small'
+                audioPath='angry/hes_an_idiot.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="Christ hurry up" size='small'
+                audioPath='angry/christ_hurry_up.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="LIE!" size='small'
+                audioPath='angry/LIE.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="My life makes ur life possible" size='small'
+                audioPath='angry/my_life_makes_your_life_possible.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="Burn in hell" size='small'
+                audioPath='angry/burn_in_hell.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="I could Burn in hell" size='small'
+                audioPath='angry/i_could_burn_in_hell.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="Don't ask me for ..." size='small'
+                audioPath='angry/dont_ask_me_for_something_i_cant_give.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+            <ButtonPanel title='Sorry' direction='row' justify='flex-start' maxWidth='250px'>
+              <MultiButton
+                text='Sorry'
+                options = {[
+                  {text: 'Sorry', description: "I'm sorry", audioPath: 'apologies/im_sorry.wav', default: true},
+                  {text: 'Terribly sorry', description: "I'm terrible sorry", audioPath: 'apologies/im_terribly_sorry.wav'},
+                  {text: 'Sorry, made mistake', description: "I'm sorry I made a mistake", 
+                    audioPath: 'apologies/im_sorry_made_a_mistake.wav'},
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <SoundButton 
+                text="Wish I could .." size='small'
+                audioPath='apologies/i_wish_i_could.wav'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="Almost forgot" size='small'
+                audioPath='apologies/oh_i_almost_forgot.wav'
                 onClick={this.handleSoundButtonClick}
               />
             </ButtonPanel>
