@@ -68,14 +68,24 @@
   opacity: 0.75;
 }
 
+/* Prevent MultiButton Popover from stealing MouseUp events */
+div[role=presentation] {
+  pointer-events: none;
+}
+
 .MuiPopover-paper {
-  z-index: 9999;
+  pointer-events: auto;
+}
+
+.Button-base {
   position: relative;
+  background: #214fa5;
 }
 
 .MultiButton-main {
-  z-index: 9998;
   position: relative;
+  /* Distinguishes a multibutton from a regular soundbutton */
+  background: linear-gradient(0deg, #ff7593 10%, #214fa5 10%);
 }
 
 .MultiButton-menu > div > ul {
