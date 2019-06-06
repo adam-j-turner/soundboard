@@ -42,15 +42,6 @@
   height: 50px;
 }
 
-.editModeBar h1 {
-  vertical-align: center;
-  width: 200px;
-  height: 50%;
-  float: left;
-  margin-left: 1%;
-  font-size: 32px;
-}
-
 .MainGrid {
   padding: 20px;
 }
