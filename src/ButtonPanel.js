@@ -38,7 +38,7 @@ ButtonPanel.defaultProps = {
   direction: "row",
   justify: "center",
   alignItems: "center",
-  spacing: 2,
+  spacing: 1,
   maxWidth: '400px'
 }
 
