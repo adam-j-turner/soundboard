@@ -189,7 +189,7 @@ class Container extends React.Component {
                   {text: "..It's policy", description: "Drop it, it's policy.", 
                     audioPath: 'finish/drop_it_its_policy.mp3', default: true},
                   {text: '..or find yourself a ride', description: 'Drop it or find yourself a ride home', 
-                    audioPath: 'names/drop_it_or_find_yourself_a_ride.mp3'}
+                    audioPath: 'finish/drop_it_or_find_yourself_a_ride.mp3'}
                 ]}
                 onMouseUp={this.handleSoundButtonClick}
                 ref={(mb) => this.multiButtons.push(mb)}
