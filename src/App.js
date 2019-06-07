@@ -139,7 +139,7 @@ class Container extends React.Component {
           spacing={1}
         >
           {/* Column 1 */}
-          <PanelColumn>
+          <PanelColumn alignItems='flex-end'>
             <ButtonPanel title='Locations' direction='column' alignItems='flex-start'>
               <SoundButton 
                 text='St. Louis' size='small'
@@ -164,9 +164,40 @@ class Container extends React.Component {
             </ButtonPanel>
             <ButtonPanel title='Colors' direction='column' alignItems='flex-start'>
               <SoundButton 
-                text="GYRW&B" size='small'
-                description="Green, Yellow, Red White & Blue"
+                text='GYRW&B' size='small'
+                description='Green, Yellow, Red White & Blue'
                 audioPath='colors/colors.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+            <ButtonPanel title='Finish' direction='row' alignItems='flex-start' maxWidth='250px'>
+              <SoundButton 
+                text='Cancel' size='small'
+                description='Cancel whatever I had.'
+                audioPath='finish/cancel_whatever.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="That's all" size='small'
+                description="That's all"
+                audioPath='finish/thats_all.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <MultiButton
+                text='Drop it' size='small'
+                options = {[
+                  {text: "..It's policy", description: "Drop it, it's policy.", 
+                    audioPath: 'finish/drop_it_its_policy.mp3', default: true},
+                  {text: '..or find yourself a ride', description: 'Drop it or find yourself a ride home', 
+                    audioPath: 'names/drop_it_or_find_yourself_a_ride.mp3'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <SoundButton 
+                text="Gettin kinda late" size='small'
+                description="It's gettin kinda late, I think I'll sleep out here"
+                audioPath='finish/gettin_kinda_late.mp3'
                 onClick={this.handleSoundButtonClick}
               />
             </ButtonPanel>
@@ -337,7 +368,7 @@ class Container extends React.Component {
           </PanelColumn>
 
           {/* Column 3 */}
-          <PanelColumn>
+          <PanelColumn alignItems='center'>
             <ButtonPanel title='Call related' direction='column' alignItems='flex-start'>
               <SoundButton 
                 text='Can you talk?' size='small'
