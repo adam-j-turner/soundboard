@@ -916,6 +916,14 @@ class Container extends React.Component {
 
         <Footer>
           <DrawerButton text='Car / Vehicle' icon={<KeyboardArrowUp/>}>
+            <ButtonPanel title='Make / Model' direction='column' alignItems='flex-start' maxWidth='300px'>
+              <SoundButton 
+                text='Blue BMW'
+                description='Blue BMW'
+                audioPath='car/blue_bmw.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
             <ButtonPanel title='Start the car' direction='column' alignItems='flex-start' maxWidth='300px'>
               <SoundButton 
                 text='Come on! (starting car)'
@@ -927,6 +935,12 @@ class Container extends React.Component {
                 text='Tryin to get the car started'
                 description='Just tryin to get the car started'
                 audioPath='car/tryin_to_start_car.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text="The keys don't work"
+                description='The keys dont work'
+                audioPath='car/the_keys_dont_work.mp3'
                 onClick={this.handleSoundButtonClick}
               />
               <SoundButton 
