@@ -641,6 +641,15 @@ class Container extends React.Component {
                 ref={(mb) => this.multiButtons.push(mb)}
               />
               <MultiButton
+                text='Huh?'
+                options = {[
+                  {text: 'Huh? 1', description: 'Uhh', audioPath: 'stall/huh_1.mp3', default: true},
+                  {text: 'Huh? 2', description: 'Uhh', audioPath: 'stall/huh_2.mp3'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <MultiButton
                 text='IDK'
                 options = {[
                   {text: 'IDK 1', description: "I don't know", audioPath: 'stall/i_dont_know_1.mp3', default: true},
@@ -668,6 +677,12 @@ class Container extends React.Component {
                 ref={(mb) => this.multiButtons.push(mb)}
               />
               <SoundButton 
+                text='It would be..'
+                description='It would be umm..'
+                audioPath='stall/it_would_be_um.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
                 text='I think' size='small'
                 description='I think'
                 audioPath='stall/i_think.mp3'
@@ -677,6 +692,12 @@ class Container extends React.Component {
                 text='Give me a few moments' size='small'
                 description='Give me a few moments'
                 audioPath='stall/give_me_a_few_moments.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='In a meeting' size='small'
+                description="I'm in a meeting"
+                audioPath='stall/im_in_a_meeting.mp3'
                 onClick={this.handleSoundButtonClick}
               />
               <SoundButton 
@@ -697,12 +718,7 @@ class Container extends React.Component {
                 audioPath='stall/lets_not_waste_any_more_time.mp3'
                 onClick={this.handleSoundButtonClick}
               />
-              <SoundButton 
-                text='In a meeting' size='small'
-                description="I'm in a meeting"
-                audioPath='stall/im_in_a_meeting.mp3'
-                onClick={this.handleSoundButtonClick}
-              />
+
             </ButtonPanel>
             <ButtonPanel title='Questions 1' justify='flex-start' maxWidth='310px'>
               <MultiButton
@@ -765,14 +781,26 @@ class Container extends React.Component {
                 text='Why?'
                 options = {[
                   {text: 'Why? 1', description: 'Why?', audioPath: 'questions/why_1.mp3', default: true},
-                  {text: 'Why? (angry)', description: 'Why? (angry)', audioPath: 'questions/why_angry.mp3'}
+                  {text: 'Why? 2', description: 'Why?', audioPath: 'questions/why_2.mp3'},
+                  {text: 'Why? 3', description: 'Why?', audioPath: 'questions/why_3.mp3'},
+                  {text: 'Why? 4 (Angry)', description: 'Why? (Angry)', audioPath: 'questions/why_4_angry.mp3'}
                 ]}
                 onMouseUp={this.handleSoundButtonClick}
                 ref={(mb) => this.multiButtons.push(mb)}
               />
-              <SoundButton 
+              <SoundButton
                 text="Why not?" size='small'
                 audioPath='questions/why_not.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton
+                text="When?" size='small'
+                audioPath='questions/when_1.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton
+                text="Where?" size='small'
+                audioPath='questions/where.mp3'
                 onClick={this.handleSoundButtonClick}
               />
               <SoundButton 
