@@ -4,7 +4,7 @@ import PanelColumn from './PanelColumn.js';
 import ButtonPanel from './ButtonPanel.js';
 import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
-import { Line } from 'rc-progress';
+// import { Line } from 'rc-progress';
 import _ from "lodash";
 import './App.css';
 
@@ -124,9 +124,9 @@ class Container extends React.Component {
         <div className='header'>
           <h1>The Ultimate Harrison Ford Soundboard</h1>
         </div>
-        <div>
+        {/* <div>
           <Line className='progressBar' strokeColor='var(--primary)' percent={this.state.progress} />
-        </div>
+        </div> */}
 
         {/* Main grid */}
         {/* TODO: Place this grid in its own file */}
