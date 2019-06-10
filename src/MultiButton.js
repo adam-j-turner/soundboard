@@ -27,7 +27,7 @@ class MultiButton extends React.Component {
 
   render() {
     return (
-      <Grid item key={this.props.key}>
+      <Grid item key={this.props.key} className="MultiButton-gridItem">
         <Button
           {...this.props}
           className="Button-base MultiButton-main"

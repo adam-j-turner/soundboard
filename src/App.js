@@ -4,6 +4,9 @@ import PanelColumn from './PanelColumn.js';
 import ButtonPanel from './ButtonPanel.js';
 import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
+import DrawerButton from './DrawerButton.js';
+import Footer from './Footer.js';
+import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp'
 // import { Line } from 'rc-progress';
 import _ from "lodash";
 import './App.css';
@@ -910,6 +913,31 @@ class Container extends React.Component {
             </ButtonPanel>
           </PanelColumn>
         </Grid>
+
+        <Footer>
+          <DrawerButton text='Car / Vehicle' icon={<KeyboardArrowUp/>}>
+            <ButtonPanel title='Start the car' direction='column' alignItems='flex-start' maxWidth='300px'>
+              <SoundButton 
+                text='Come on! (starting car)'
+                description='Come on! (trying to start car noises).'
+                audioPath='car/come_on_car.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Tryin to get the car started'
+                description='Just tryin to get the car started'
+                audioPath='car/tryin_to_start_car.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Battery' size='small'
+                description='Battery'
+                audioPath='car/battery.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+          </DrawerButton>
+        </Footer>
       </div>
     )
   }

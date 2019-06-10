@@ -61,7 +61,7 @@
 }
 
 /* Prevent MultiButton Popover from stealing MouseUp events */
-div[role=presentation] {
+.MultiButton-gridItem > div[role=presentation] {
   pointer-events: none;
 }
 
@@ -99,3 +99,16 @@ div[role=presentation] {
   display: flex;
   flex-direction: row;
 }
+
+.Footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ffd684;
+}
+
+.Footer-grid {
+  padding: 10px;
+}
+
