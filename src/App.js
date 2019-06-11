@@ -4,6 +4,7 @@ import PanelColumn from './PanelColumn.js';
 import ButtonPanel from './ButtonPanel.js';
 import MultiButton from './MultiButton.js';
 import SoundButton from './SoundButton.js';
+import SoundButtonGroup from './SoundButtonGroup.js';
 import DrawerButton from './DrawerButton.js';
 import Footer from './Footer.js';
 import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp'
@@ -358,12 +359,30 @@ class Container extends React.Component {
             </ButtonPanel>
             <ButtonPanel 
               title='Numbers' direction='row' spacing={1}
-              alignItems='flex-start' maxWidth='200px'>
+              alignItems='flex-start' maxWidth='200px'
+            >
+              <SoundButtonGroup size='small'
+                options = {[
+                  {text: '0', description: 'Zero', audioPath: 'numbers/0.mp3'},
+                  {text: '1', description: 'One', audioPath: 'numbers/1.mp3'},
+                  {text: '2', description: 'Two', audioPath: 'numbers/2.mp3'},
+                  {text: '4', description: 'Four', audioPath: 'numbers/4.mp3'},
+                  {text: '6', description: 'Six', audioPath: 'numbers/6.mp3'}
+                ]}
+                onButtonClick={this.handleSoundButtonClick}
+              />
+              <SoundButtonGroup size='small'
+                options = {[
+                  {text: '8', description: 'Eight', audioPath: 'numbers/8.mp3'},
+                  {text: '9', description: 'Nine', audioPath: 'numbers/9.mp3'},
+                  {text: '10', description: 'Ten', audioPath: 'numbers/10.mp3'},
+                ]}
+                onButtonClick={this.handleSoundButtonClick}
+              />
               <MultiButton
                 text='Small'
                 options = {[
-                  {text: '10', description: 'Ten', audioPath: 'numbers/10.mp3', default: true},
-                  {text: '48', description: 'Forty-eight', audioPath: 'numbers/48.mp3'},
+                  {text: '48', description: 'Forty-eight', audioPath: 'numbers/48.mp3', default: true},
                   {text: '55', description: 'Fifty-five', audioPath: 'numbers/55.mp3'}
                 ]}
                 onMouseUp={this.handleSoundButtonClick}

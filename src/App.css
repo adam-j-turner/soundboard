@@ -100,6 +100,10 @@
   flex-direction: row;
 }
 
+.SoundButtonGroup > .SoundButton {
+  min-width: 5px;
+}
+
 .Footer-main {
   position: fixed;
   left: 0;
