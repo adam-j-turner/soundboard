@@ -173,11 +173,29 @@ class Container extends React.Component {
               />
             </ButtonPanel>
             <ButtonPanel title='Locations' direction='row' alignItems='flex-start' maxWidth='240px'>
+             <MultiButton
+                text='Addresses'
+                options = {[
+                  {text: '15 Willaby Ln', description: '15 Willaby Lane', audioPath: 'locations/15_willaby_lane.mp3', default: true},
+                  {text: '389 Park Ave', description: '389 Park Avenue', audioPath: 'locations/389_park_avenue.mp3'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
               <SoundButton 
                 text='St. Louis' size='small'
                 description='St. Louis'
                 audioPath='locations/st_louis_1.mp3'
                 onClick={this.handleSoundButtonClick}
+              />
+              <MultiButton
+                text='San Fran' size='small'
+                options = {[
+                  {text: 'San Francisco 1', description: 'San Francisco', audioPath: 'locations/san_francisco.mp3', default: true},
+                  {text: 'San Francisco 2', description: 'San Francisco', audioPath: 'locations/san_francisco_2.mp3'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
               />
               <SoundButton 
                 text='Florida' size='small'
@@ -186,13 +204,7 @@ class Container extends React.Component {
                 onClick={this.handleSoundButtonClick}
               />
               <SoundButton 
-                text='389 Park Ave' size='small'
-                description='389 Park Avenue'
-                audioPath='locations/389_park_avenue.mp3'
-                onClick={this.handleSoundButtonClick}
-              />
-              <SoundButton 
-                text='Meet me' size='small'
+                text='Meet me'
                 description='Meet me here this evening'
                 audioPath='locations/meet_me_here.mp3'
                 onClick={this.handleSoundButtonClick}
@@ -903,11 +915,16 @@ class Container extends React.Component {
               />
             </ButtonPanel>
             <ButtonPanel title='Finish' direction='row' alignItems='flex-start' maxWidth='250px'>
-              <SoundButton 
-                text='Cancel' size='small'
-                description='Cancel whatever I had.'
-                audioPath='finish/cancel_whatever.mp3'
-                onClick={this.handleSoundButtonClick}
+              <MultiButton
+                text='Cancel'
+                options = {[
+                  {text: "Cancel whatever I've got'", description: "Cancel whatever I've got", 
+                    audioPath: 'finish/cancel_whatever.mp3', default: true},
+                  {text: 'We have to cancel', description: "I'm afraid we have to cancel", 
+                    audioPath: 'finish/im_afraid_we_have_to_cancel.mp3'}
+                ]}
+                onMouseUp={this.handleSoundButtonClick}
+                ref={(mb) => this.multiButtons.push(mb)}
               />
               <SoundButton 
                 text="That's all" size='small'
@@ -975,6 +992,55 @@ class Container extends React.Component {
                 text='Battery' size='small'
                 description='Battery'
                 audioPath='car/battery.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+          </DrawerButton>
+
+          <DrawerButton text='Misc' icon={<KeyboardArrowUp/>}>
+            <ButtonPanel title='Misc 1' direction='row' alignItems='center' maxWidth='400px'>
+              <SoundButton 
+                text='Eiffel Tower paperweights' size='small'
+                description='Could you bring me one of those little Eiffel Tower paperweights?'
+                audioPath='misc/eiffel_tower_paperweights.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Flat panel screen' size='small'
+                description='No one in the world has a flat panel screen this size'
+                audioPath='misc/flat_panel_screen.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='2-day supply of red jello' size='small'
+                description='A two-day supply of red jello'
+                audioPath='misc/two_day_supply_of_red_jello.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+            </ButtonPanel>
+            <ButtonPanel title='One-liners' direction='row' alignItems='center' maxWidth='300px'>
+              <SoundButton 
+                text='Transvestite' size='small'
+                description='Transvestite'
+                audioPath='misc/transvestite.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Child' size='small'
+                description='Child'
+                audioPath='misc/child.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Morphine' size='small'
+                description='Morphine'
+                audioPath='misc/morphine_1.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Portable fax machine' size='small'
+                description='Portable fax machine'
+                audioPath='misc/portable_fax_machine.mp3'
                 onClick={this.handleSoundButtonClick}
               />
             </ButtonPanel>
