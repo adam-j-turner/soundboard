@@ -672,7 +672,8 @@ class Container extends React.Component {
               <MultiButton
                 text='Hang on'
                 options = {[
-                  {text: 'Hang on 1', description: 'Hang on', audioPath: 'stall/hang_on_1.mp3', default: true},
+                  {text: 'Hold on 1', description: 'Hold on a second', audioPath: 'stall/hold_on_a_second.mp3', default: true},
+                  {text: 'Hang on 1', description: 'Hang on', audioPath: 'stall/hang_on_1.mp3'},
                   {text: 'Hang on 2', description: 'Hang on', audioPath: 'stall/hang_on_2.mp3'},
                   {text: 'You just hang on', description: 'You just hang on', audioPath: 'stall/you_just_hang_on.mp3'}
                 ]}
@@ -1015,6 +1016,12 @@ class Container extends React.Component {
                 text='2-day supply of red jello' size='small'
                 description='A two-day supply of red jello'
                 audioPath='misc/two_day_supply_of_red_jello.mp3'
+                onClick={this.handleSoundButtonClick}
+              />
+              <SoundButton 
+                text='Give a mouse a cookie' size='small'
+                description='If you give a mouse a cookie..'
+                audioPath='misc/give_a_mouse_a_cookie.mp3'
                 onClick={this.handleSoundButtonClick}
               />
             </ButtonPanel>
