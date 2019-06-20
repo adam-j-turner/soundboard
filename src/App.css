@@ -9,6 +9,10 @@
   font-family: "Calibri", Times, sans-serif;
   color: var(--text);
   background-color: var(--background);
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -42,51 +46,76 @@
   height: 50px;
 }
 
-.editModeBar h1 {
-  vertical-align: center;
-  width: 200px;
-  height: 50%;
-  float: left;
-  margin-left: 1%;
-  font-size: 32px;
+.MainGrid {
+  padding: 20px;
 }
 
-.MuiFab-root {
-  height: 18px !important;
+.ButtonPanel {
+  padding: 15px;
+  padding-top: 20px;
 }
 
-.MuiFab-primary {
-  border-radius: 0% !important;
-  width: auto !important;
-  height: 18px !important;
-  text-transform: none !important;
+.ButtonPanel-label {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  opacity: 0.75;
+}
+
+/* Prevent MultiButton Popover from stealing MouseUp events */
+.MultiButton-gridItem > div[role=presentation] {
+  pointer-events: none;
+}
+
+.MuiPopover-paper {
+  pointer-events: auto;
+}
+
+.Button-base {
+  position: relative;
+  background: #214fa5;
   text-align: center;
-  box-shadow: none !important;
-  outline: none !important;
+
+  height: 26px;
+  font-size: 14px !important;
+  line-height: 1 !important;
 }
 
-.MuiFab-label {
-  height: 18px !important;
+.Button-base-small {
+  height: 18px;
+  font-size: 11px !important;
 }
 
-.MuiFab-primary p {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 16px;
+.Button-base-large {
+  height: 30px;
+  font-size: 18px !important;
 }
 
-.multiButtonOption {
-  transition: none !important;
-  margin: 0px !important;
-  box-shadow: none !important;
-
-  border-radius: 0% !important;
+.MultiButton-main {
+  position: relative;
+  /* Distinguishes a multibutton from a regular soundbutton */
+  background: linear-gradient(0deg, #ff7593 10%, #214fa5 10%);
 }
 
-.multiButtonOption p {
-  padding-top: 16px;
+.MultiButton-menu > div > ul {
+  display: flex;
+  flex-direction: row;
 }
 
-.MuiSpeedDial-actions {
-  padding-left: 32px !important;
+.SoundButtonGroup > .SoundButton {
+  min-width: 5px;
 }
+
+.Footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ffd684;
+}
+
+.Footer-grid {
+  padding: 10px;
+}
+
