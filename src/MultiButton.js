@@ -75,7 +75,7 @@ class MultiButton extends React.Component {
           }}
         >
           {this.props.options.map(option => (
-            <Tooltip title={option.description} placement='bottom'>
+            <Tooltip key={option.text} title={option.description} placement='bottom'>
               <MenuItem
                 onMouseEnter={() => {
                   this.setState({ audioPath: option.audioPath });

@@ -19,6 +19,7 @@ class SoundButtonGroup extends React.Component {
         >
           {this.props.options.map(option => (
             <SoundButton
+              key={option.text}
               gridItem={false}
               text={option.text}
               description={option.description}

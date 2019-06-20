@@ -107,7 +107,7 @@ class Container extends React.Component {
       this.setState({playing: true}, () => {
         this.startAudio()
       })
-    }    
+    }
   }
 
   // Uses callback refs to collapse all MultiButtons on mouseUp.
@@ -128,9 +128,6 @@ class Container extends React.Component {
         <div className='header'>
           <h1>The Ultimate Harrison Ford Soundboard</h1>
         </div>
-        {/* <div>
-          <Line className='progressBar' strokeColor='var(--primary)' percent={this.state.progress} />
-        </div> */}
 
         {/* Main grid */}
         {/* TODO: Place this grid in its own file */}
@@ -148,7 +145,7 @@ class Container extends React.Component {
               <MultiButton
                 text='Tmrw'
                 options = {[
-                  {text: "1", description: "Tomorrow.", audioPath: 'datetime/tomorrow_1.mp3', default: true},
+                  {text: '1', description: 'Tomorrow.', audioPath: 'datetime/tomorrow_1.mp3', default: true},
                   {text: '2', description: 'Tomorrow.', audioPath: 'datetime/tomorrow_2.mp3'}
                 ]}
                 onMouseUp={this.handleSoundButtonClick}
@@ -160,13 +157,13 @@ class Container extends React.Component {
                 audioPath='datetime/this_morning.mp3'
                 onClick={this.handleSoundButtonClick}
               />
-              <SoundButton 
-                text='Aftrnoon' size='small'
+              <SoundButton
+                text='Afternoon' size='small'
                 description='This morning'
                 audioPath='datetime/this_afternoon.mp3'
                 onClick={this.handleSoundButtonClick}
               />
-              <SoundButton 
+              <SoundButton
                 text='Had appointment?' size='small'
                 description='Did we have an appointment?'
                 audioPath='datetime/did_we_have_an_appointment.mp3'
@@ -393,8 +390,8 @@ class Container extends React.Component {
                 options = {[
                   {text: '5,000', description: 'Five-thousand', audioPath: 'numbers/5k.mp3', default: true},
                   {text: '100k', description: 'One-hundred-thousand', audioPath: 'numbers/100k.mp3'},
-                  {text: '200k', description: 'Two-hundred-thosuand', audioPath: 'numbers/200k.mp3'},
-                  {text: '500k', description: 'Five-hundred-thosuand', audioPath: 'numbers/500k.mp3'},
+                  {text: '200k', description: 'Two-hundred-thousand', audioPath: 'numbers/200k.mp3'},
+                  {text: '500k', description: 'Five-hundred-thousand', audioPath: 'numbers/500k.mp3'},
                   {text: '1 million', description: 'A million', audioPath: 'numbers/a_million.mp3'}
                 ]}
                 onMouseUp={this.handleSoundButtonClick}
@@ -547,7 +544,7 @@ class Container extends React.Component {
           <PanelColumn direction='row' maxWidth='535px' justify='flex-start'>
             <ButtonPanel title='Greetings' justify='flex-start' maxWidth='320px'>
               <MultiButton
-                text='Hello' size='Large'
+                text='Hello' size='large'
                 options = {[
                   {text: '1', description: 'Helloo?', audioPath: 'greetings/hello_1.mp3', default: true},
                   {text: '2', description: 'Hello?', audioPath: 'greetings/hello_2.mp3'},
@@ -603,7 +600,7 @@ class Container extends React.Component {
             </ButtonPanel>
             <ButtonPanel title='Agree / Disagree' maxWidth='220px'>
               <MultiButton
-                text='Yes' size='Large'
+                text='Yes' size='large'
                 options = {[
                   {text: 'Yeah 1', description: 'Yeah (1)', audioPath: 'agree/yeah_1.mp3', default: true},
                   {text: 'Yeah 2', description: 'Yeah (2)', audioPath: 'agree/yeah_2.mp3', },
@@ -623,7 +620,7 @@ class Container extends React.Component {
                 ref={(mb) => this.multiButtons.push(mb)}
               />
               <MultiButton
-                text='No' size='Large'
+                text='No' size='large'
                 options = {[
                   {text: '1', description: 'No', audioPath: 'disagree/no_1.mp3', default: true},
                   {text: '2', description: 'No', audioPath: 'disagree/no_2.mp3'},
