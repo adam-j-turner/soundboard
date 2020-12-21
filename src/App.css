@@ -92,15 +92,25 @@
   font-size: 18px !important;
 }
 
-.MultiButton-main {
+.MultiButton-base {
   position: relative;
-  /* Distinguishes a multibutton from a regular soundbutton */
+}
+
+.MultiButton-regular {
   background: linear-gradient(0deg, #ff7593 10%, #214fa5 10%);
+}
+
+.MultiButton-concatenator {
+  background: linear-gradient(0deg, #0dda2f 10%, #214fa5 10%);
 }
 
 .MultiButton-menu > div > ul {
   display: flex;
   flex-direction: row;
+}
+
+.SoundButton-random {
+  background: linear-gradient(0deg, #fcec0d 10%, #214fa5 10%);
 }
 
 .SoundButtonGroup > .SoundButton {
@@ -118,4 +128,3 @@
 .Footer-grid {
   padding: 10px;
 }
-

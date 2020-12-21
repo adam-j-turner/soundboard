@@ -1,21 +1,31 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid'
+import Util from '../Util.js';
+import Grid from '@material-ui/core/Grid';
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 
 class DrawerButton extends React.Component {
   constructor(props){
     super(props)
+
+    this.closeDrawer = this.closeDrawer.bind(this)
     this.state = {
       open: false
     }
   }
 
-  toggleDrawer(open) {
+  closeDrawer() {
+    this.setState({open: false})
+  }
+
+  toggleDrawer(open=false) {
     this.setState({open: open})
   }
 
   render() {
+    const childrenWithProps = Util.recursiveMap(this.props.children, child => 
+      React.cloneElement(child, { mouseUpExtra: this.closeDrawer }))
+
     return (
       <Grid item key={this.props.key}>
         <Button
@@ -27,7 +37,7 @@ class DrawerButton extends React.Component {
           }}
           variant="outlined"
           color="primary"
-          onClick={() => {this.toggleDrawer(true)}}
+          onMouseDown={() => {this.toggleDrawer(true)}}
         >
             {this.props.icon}
             {this.props.text}
@@ -38,7 +48,7 @@ class DrawerButton extends React.Component {
           onOpen={() => {this.toggleDrawer(true)}}
         >
           <Grid container direction='row' alignItems='center' justify='center'>
-            {this.props.children}
+            {childrenWithProps}
           </Grid>
         </Drawer>
       </Grid>

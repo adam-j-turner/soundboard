@@ -1,0 +1,134 @@
+{
+    "bojangles.mp3": {
+        "description": "Bojangles",
+        "lists": ["names", "names_last", "names_first", "names_funny"]
+    },
+    "chuck.mp3": {
+        "description": "Chuck",
+        "lists": ["names", "names_first"]
+    },
+    "clive_driscoll.mp3": {
+        "description": "Clive Driscoll",
+        "lists": ["names", "names_full"]
+    },
+    "david_1.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_2.mp3": {
+        "description": "David, David..",
+        "lists": ["names", "names_david"]
+    },
+    "david_3.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_4.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_5.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_6.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_7.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_8.mp3": {
+        "description": "David",
+        "lists": ["names", "names_first", "names_david"]
+    },
+    "david_9_loud.mp3": {
+        "description": "David",
+        "lists": ["names", "names_david"]
+    },
+    "dede.mp3": {
+        "description": "Dede",
+        "lists": ["names", "names_first", "names_last", "names_funny"]
+    },
+    "devlin_macgregor.mp3": {
+        "description": "Devlin Macgregor",
+        "lists": ["names", "names_full"]
+    },
+    "elizabeth_1.mp3": {
+        "description": "Elizabeth",
+        "lists": ["names", "names_first", "names_elizabeth"]
+    },
+    "elizabeth_2.mp3": {
+        "description": "Elizabeth",
+        "lists": ["names", "names_first", "names_elizabeth"]
+    },
+    "frank.mp3": {
+        "description": "Frank",
+        "lists": ["names", "names_first"]
+    },
+    "gailla.mp3": {
+        "description": "Gailla",
+        "lists": ["names", "names_last", "names_funny"]
+    },
+    "harvey_1.mp3": {
+        "description": "Harvey",
+        "lists": ["names", "names_first", "names_last", "names_harvey"]
+    },
+    "harvey_2.mp3": {
+        "description": "Harvey",
+        "lists": ["names", "names_first", "names_last", "names_harvey"]
+    },
+    "linus.mp3": {
+        "description": "Linus",
+        "lists": ["names", "names_first", "names_last"]
+    },
+    "marty.mp3": {
+        "description": "Marty",
+        "lists": ["names", "names_first"]
+    },
+    "matthew_zelick.mp3": {
+        "description": "Matthew Zelick",
+        "lists": ["names", "names_full"]
+    },
+    "patrick_1.mp3": {
+        "description": "Patrick",
+        "lists": ["names", "names_first"]
+    },
+    "patrick_tyson_1.mp3": {
+        "description": "Patrick Tyson",
+        "lists": ["names", "names_full"]
+    },
+    "richard_1.mp3": {
+        "description": "Richard",
+        "lists": ["names", "names_first", "names_last", "names_richard"]
+    },
+    "richard_2.mp3": {
+        "description": "Richard",
+        "lists": ["names", "names_first", "names_last", "names_richard"]
+    },
+    "ron_1.mp3": {
+        "description": "Ron",
+        "lists": ["names", "names_first", "names_ron"]
+    },
+    "ron_2.mp3": {
+        "description": "Ron",
+        "lists": ["names", "names_first", "names_ron"]
+    },
+    "this_is_marshall.mp3": {
+        "description": "This is marshall",
+        "lists": ["names", "names_greetings"]
+    },
+    "this_is_richard_1.mp3": {
+        "description": "This is Richard",
+        "lists": ["names", "names_greetings"]
+    },
+    "this_is_richard_2.mp3": {
+        "description": "This is Richard",
+        "lists": ["names", "names_greetings"]
+    },
+    "tyson_1.mp3": {
+        "description": "Tyson",
+        "lists": ["names", "names_first", "names_last"]
+    }
+}

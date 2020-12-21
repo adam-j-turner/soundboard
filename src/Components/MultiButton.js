@@ -6,6 +6,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Tooltip from '@material-ui/core/Tooltip';
 import ListItemText from '@material-ui/core/ListItemText';
 
+import instance from '../SoundProvider.js'
+
 class MultiButton extends React.Component {
   constructor(props){
     super(props)
@@ -14,7 +16,11 @@ class MultiButton extends React.Component {
       audioPath: ''
     }
 
-    this.text = 'MultiButton'
+    if (this.props.precursorAudioPath) {
+      this.type = 'concatenator'
+    } else {
+      this.type = 'regular'
+    }
   }
   
   handleClose = () => {
@@ -25,12 +31,21 @@ class MultiButton extends React.Component {
     this.setState({ anchorEl: e.currentTarget });
   }
 
+  handleMouseUp = (e) => {
+    if (this.props.precursorAudioPath) {
+      instance.playAudio([this.props.precursorAudioPath, this.state.audioPath], e.altKey)
+    } else {
+      instance.playAudio(this.state.audioPath, e.altKey);
+    }
+    this.handleClose()
+  }
+
   render() {
     return (
       <Grid item key={this.props.key} className="MultiButton-gridItem">
         <Button
           {...this.props}
-          className="Button-base MultiButton-main"
+          className={"Button-base MultiButton-base MultiButton-" + this.type}
           classes={{
             sizeSmall: 'Button-base-small',
             sizeLarge: 'Button-base-large'  
@@ -40,10 +55,7 @@ class MultiButton extends React.Component {
           variant="contained"
           color="primary"
           onMouseDown={this.handleOpen}
-          onMouseUp={() => {
-            this.props.onMouseUp(this.state.audioPath);
-            this.handleClose()
-          }}
+          onMouseUp={this.handleMouseUp}
           onMouseEnter={
             () => {this.setState(
               {audioPath: (this.props.options.find((o) => o.default)).audioPath})
@@ -80,10 +92,7 @@ class MultiButton extends React.Component {
                 onMouseEnter={() => {
                   this.setState({ audioPath: option.audioPath });
                 }}
-                onMouseUp={() => {
-                  this.props.onMouseUp(this.state.audioPath);
-                  this.handleClose()
-                }}
+                onMouseUp={this.handleMouseUp}
               >
                 <ListItemText primary={option.text} />
               </MenuItem>
