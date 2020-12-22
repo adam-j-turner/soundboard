@@ -54,10 +54,18 @@ class Container extends React.Component {
           <PanelColumn alignItems='flex-end'>
             <ButtonPanel title='Date/Time' direction='row' alignItems='flex-start' maxWidth='260px'>
               <MultiButton
+                text='Today'
+                options = {[
+                  {text: '1', description: 'Today', audioPath: 'datetime/today_1.mp3', default: true},
+                  {text: '2', description: 'Today', audioPath: 'datetime/today_2.mp3'}
+                ]}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <MultiButton
                 text='Tmrw'
                 options = {[
-                  {text: '1', description: 'Tomorrow.', audioPath: 'datetime/tomorrow_1.mp3', default: true},
-                  {text: '2', description: 'Tomorrow.', audioPath: 'datetime/tomorrow_2.mp3'}
+                  {text: '1', description: 'Tomorrow', audioPath: 'datetime/tomorrow_1.mp3', default: true},
+                  {text: '2', description: 'Tomorrow', audioPath: 'datetime/tomorrow_2.mp3'}
                 ]}
                 ref={(mb) => this.multiButtons.push(mb)}
               />
@@ -567,13 +575,18 @@ class Container extends React.Component {
               <MultiButton
                 text='I want..' precursorAudioPath='me/stubs/i_want.mp3'
                 options = {[
-                  {text: 'Child', description: 'Child', audioPath: 'misc/child.mp3', default: true},
+                  {text: 'Child', description: 'Child', audioPath: 'misc/child.mp3'},
                   {text: 'Morphine', description: 'Morphine', audioPath: 'drugs/morphine_1.mp3'},
                   {text: 'Transvestite', description: 'Transvestite', audioPath: 'misc/transvestite.mp3'},
                   {text: 'PortableFax', description: 'Portable Fax Machine', audioPath: 'misc/portable_fax_machine.mp3'},
                   {text: 'RedJelloSupply', description: 'Two-day supply of red Jell-O', audioPath: 'misc/two_day_supply_of_red_jello.mp3'}
                 ]}
-                setNextAudio={this.setNextAudio}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <MultiButton
+                text="I've already been to the.." size='small'
+                precursorAudioPath='me/stubs/ive_already_been_to_the.mp3'
+                fromList='places_without_the'
                 ref={(mb) => this.multiButtons.push(mb)}
               />
               <SoundButton 

@@ -7,6 +7,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import instance from '../SoundProvider.js'
+import meta from '../MetaProvider.js'
 
 class MultiButton extends React.Component {
   constructor(props){
@@ -15,6 +16,8 @@ class MultiButton extends React.Component {
       anchorEl: null,
       audioPath: ''
     }
+
+    this.options = this.props.fromList ? meta.getList(this.props.fromList, true) : this.props.options
 
     if (this.props.precursorAudioPath) {
       this.type = 'concatenator'
@@ -33,7 +36,11 @@ class MultiButton extends React.Component {
 
   handleMouseUp = (e) => {
     if (this.props.precursorAudioPath) {
-      instance.playAudio([this.props.precursorAudioPath, this.state.audioPath], e.altKey)
+      if (!this.state.audioPath) {
+        instance.playAudio(this.props.precursorAudioPath, e.altKey)
+      } else {
+        instance.playAudio([this.props.precursorAudioPath, this.state.audioPath], e.altKey)
+      }
     } else {
       instance.playAudio(this.state.audioPath, e.altKey);
     }
@@ -56,9 +63,12 @@ class MultiButton extends React.Component {
           color="primary"
           onMouseDown={this.handleOpen}
           onMouseUp={this.handleMouseUp}
-          onMouseEnter={
-            () => {this.setState(
-              {audioPath: (this.props.options.find((o) => o.default)).audioPath})
+          onMouseEnter={() => {
+            var audio = this.options.find((o) => o.default)
+
+            this.setState({
+              audioPath: audio === undefined ? '' : audio.audioPath
+            })
           }}
         >
           {this.props.text}
@@ -86,7 +96,7 @@ class MultiButton extends React.Component {
             horizontal: "left"
           }}
         >
-          {this.props.options.map(option => (
+          {this.options.map(option => (
             <Tooltip key={option.text} title={option.description} placement='bottom'>
               <MenuItem
                 onMouseEnter={() => {

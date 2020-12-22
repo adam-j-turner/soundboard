@@ -4,12 +4,20 @@ class MetaProvider {
     this.files = this.importBulk(require.context('./sounds', true, /meta.json/))
   }
 
-  getList(name) {
+  getList(name, full=false) {
     var list = []
   
     for (const [key, value] of Object.entries(this.data)) {
       if (value.lists.includes(name)) {
-        list.push(key.replace('./sounds/', ''))
+        if (full) {
+          list.push({
+            audioPath: key.replace('./sounds/', ''),
+            description: value.description,
+            text: value.displayText
+          })
+        } else {
+          list.push(key.replace('./sounds/', ''))
+        }
       }
     }
 

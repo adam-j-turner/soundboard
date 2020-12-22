@@ -1,0 +1,12 @@
+{
+    "hotel.mp3": {
+        "description": "Hotel",
+        "displayText": "Hotel",
+        "lists": ["places", "places_travel", "places_without_the"]
+    },
+    "airport.mp3": {
+        "description": "Airport",
+        "displayText": "Airport",
+        "lists": ["places", "places_travel", "places_without_the"]
+    }
+}

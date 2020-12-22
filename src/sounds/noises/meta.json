@@ -1,0 +1,12 @@
+{
+    "dog_bark.mp3": {
+        "description": "Dog barking",
+        "displayText": "Dog Bark 1",
+        "lists": ["noises", "noises_animal"]
+    },
+    "dog_bark_2.mp3": {
+        "description": "Dog barking",
+        "displayText": "Dog Bark 2",
+        "lists": ["noises", "noises_animal"]
+    }
+}
