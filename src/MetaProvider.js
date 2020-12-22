@@ -21,7 +21,13 @@ class MetaProvider {
       }
     }
 
-    return list
+    return full ? list.sort(this.sortAlpha) : list.sort()
+  }
+
+  sortAlpha(a, b) {
+    var textA = a.text.toUpperCase();
+    var textB = b.text.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
   }
 
   importBulk(context) {
