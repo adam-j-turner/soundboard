@@ -859,6 +859,19 @@ class Container extends React.Component {
                 audioPath='thanks/thanks_for_your_help.mp3'
               />
               <SoundButton 
+                text="I filled out form" description="I filled out one of these damn forms"
+                audioPath='help/i_filled_out_form.mp3'
+              />
+              <MultiButton
+                text='Emergency'
+                options = {[
+                  {text: 'This is an emergency', audioPath: 'help/emergency_u_understand.mp3', default: true,
+                    Description: 'This is an emergency, you understand?', },
+                  {text: "Tell them it's an emergency", audioPath: 'help/tell_them_emergency.mp3'},
+                ]}
+                ref={(mb) => this.multiButtons.push(mb)}
+              />
+              <SoundButton 
                 text="Trying 2 solve puzzle" size='small'
                 description="Well I am trying to solve a puzzle"
                 audioPath='help/solve_a_puzzle.mp3'

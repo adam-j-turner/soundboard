@@ -11,12 +11,12 @@ class MetaProvider {
       if (value.lists.includes(name)) {
         if (full) {
           list.push({
-            audioPath: key.replace('./sounds/', ''),
+            audioPath: key,
             description: value.description,
             text: value.displayText
           })
         } else {
-          list.push(key.replace('./sounds/', ''))
+          list.push(key)
         }
       }
     }
@@ -34,7 +34,7 @@ class MetaProvider {
     context.keys().map((item) => {
       // For some reason, making a var and using it in 'require()' below doesn't work????????
       var json = require("./sounds/" + item.replace('./', ''))
-      var path = "./sounds/" + item.replace('./', '').replace('meta.json', '')
+      var path = item.replace('./', '').replace('meta.json', '')
 
       for (const [key, value] of Object.entries(json)) {
         json[path + key] = value
